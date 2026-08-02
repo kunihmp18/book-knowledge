@@ -1,0 +1,424 @@
+{
+  "version": 1,
+  "source_sha256": "b57b96e2e065815cd9c8b7e9f4e1df8b0098a3df08f1a2ef1a61155a9fb5537f",
+  "stages": [
+    {
+      "name": "l1_batch_cards",
+      "units": [
+        {
+          "id": "part-0001-0040",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0041-0080",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0081-0120",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0121-0160",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0161-0200",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0201-0240",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0241-0280",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0281-0320",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0321-0360",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0361-0400",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0401-0440",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "part-0441-0460",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        }
+      ]
+    },
+    {
+      "name": "l0_corrected_text",
+      "units": [
+        {
+          "id": "p0001-0010",
+          "status": "complete",
+          "output": "text/corrected/p0001-0010.md",
+          "note": null,
+          "updated_at": "2026-08-02T07:00:38+00:00"
+        },
+        {
+          "id": "p0011-0020",
+          "status": "complete",
+          "output": "text/corrected/p0011-0020.md",
+          "note": null,
+          "updated_at": "2026-08-02T07:07:16+00:00"
+        },
+        {
+          "id": "p0021-0030",
+          "status": "complete",
+          "output": "text/corrected/p0021-0030.md",
+          "note": null,
+          "updated_at": "2026-08-02T07:10:03+00:00"
+        },
+        {
+          "id": "p0031-0040",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0041-0050",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0051-0060",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0061-0070",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0071-0080",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0081-0090",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0091-0100",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0101-0110",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0111-0120",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0121-0130",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0131-0140",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0141-0150",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0151-0160",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0161-0170",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0171-0180",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0181-0190",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0191-0200",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0201-0210",
+          "status": "complete",
+          "output": "text/corrected/p0201-0210.md",
+          "note": null,
+          "updated_at": "2026-08-02T07:19:31+00:00"
+        },
+        {
+          "id": "p0211-0220",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0221-0230",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0231-0240",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0241-0250",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0251-0260",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0261-0270",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0271-0280",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0281-0290",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0291-0300",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0301-0310",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0311-0320",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0321-0330",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0331-0340",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0341-0350",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0351-0360",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0361-0370",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0371-0380",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0381-0390",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0391-0400",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0401-0410",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0411-0420",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0421-0430",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0431-0440",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0441-0450",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        },
+        {
+          "id": "p0451-0460",
+          "status": "pending",
+          "output": null,
+          "note": null,
+          "updated_at": null
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-08-02T06:58:28+00:00",
+  "updated_at": "2026-08-02T07:19:31+00:00"
+}

@@ -1,0 +1,165 @@
+{
+  "version": 1,
+  "source": {
+    "path": "/home/user/book-scans-tmp/scans/scansstartup-legal-atoz",
+    "kind": "images",
+    "sha256": "b57b96e2e065815cd9c8b7e9f4e1df8b0098a3df08f1a2ef1a61155a9fb5537f",
+    "bytes": 166575246,
+    "pages": 460
+  },
+  "settings": {
+    "language": "jpn+eng",
+    "pages_per_batch": 40,
+    "force_ocr": false,
+    "deskew": false,
+    "rotate_pages": false
+  },
+  "status": "complete",
+  "batches": [
+    {
+      "id": "part-0001-0040",
+      "start": 1,
+      "end": 40,
+      "status": "complete",
+      "chars": 26857,
+      "text": "text/batches/part-0001-0040.md",
+      "ocr_pdf": "ocr/part-0001-0040.pdf",
+      "completed_at": "2026-08-02T06:34:45+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0041-0080",
+      "start": 41,
+      "end": 80,
+      "status": "complete",
+      "chars": 33329,
+      "text": "text/batches/part-0041-0080.md",
+      "ocr_pdf": "ocr/part-0041-0080.pdf",
+      "completed_at": "2026-08-02T06:36:10+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0081-0120",
+      "start": 81,
+      "end": 120,
+      "status": "complete",
+      "chars": 35042,
+      "text": "text/batches/part-0081-0120.md",
+      "ocr_pdf": "ocr/part-0081-0120.pdf",
+      "completed_at": "2026-08-02T06:37:41+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0121-0160",
+      "start": 121,
+      "end": 160,
+      "status": "complete",
+      "chars": 33367,
+      "text": "text/batches/part-0121-0160.md",
+      "ocr_pdf": "ocr/part-0121-0160.pdf",
+      "completed_at": "2026-08-02T06:39:11+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0161-0200",
+      "start": 161,
+      "end": 200,
+      "status": "complete",
+      "chars": 33135,
+      "text": "text/batches/part-0161-0200.md",
+      "ocr_pdf": "ocr/part-0161-0200.pdf",
+      "completed_at": "2026-08-02T06:40:26+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0201-0240",
+      "start": 201,
+      "end": 240,
+      "status": "complete",
+      "chars": 34977,
+      "text": "text/batches/part-0201-0240.md",
+      "ocr_pdf": "ocr/part-0201-0240.pdf",
+      "completed_at": "2026-08-02T06:41:46+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0241-0280",
+      "start": 241,
+      "end": 280,
+      "status": "complete",
+      "chars": 32693,
+      "text": "text/batches/part-0241-0280.md",
+      "ocr_pdf": "ocr/part-0241-0280.pdf",
+      "completed_at": "2026-08-02T06:43:03+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0281-0320",
+      "start": 281,
+      "end": 320,
+      "status": "complete",
+      "chars": 32404,
+      "text": "text/batches/part-0281-0320.md",
+      "ocr_pdf": "ocr/part-0281-0320.pdf",
+      "completed_at": "2026-08-02T06:44:20+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0321-0360",
+      "start": 321,
+      "end": 360,
+      "status": "complete",
+      "chars": 33143,
+      "text": "text/batches/part-0321-0360.md",
+      "ocr_pdf": "ocr/part-0321-0360.pdf",
+      "completed_at": "2026-08-02T06:45:37+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0361-0400",
+      "start": 361,
+      "end": 400,
+      "status": "complete",
+      "chars": 33719,
+      "text": "text/batches/part-0361-0400.md",
+      "ocr_pdf": "ocr/part-0361-0400.pdf",
+      "completed_at": "2026-08-02T06:46:56+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0401-0440",
+      "start": 401,
+      "end": 440,
+      "status": "complete",
+      "chars": 35473,
+      "text": "text/batches/part-0401-0440.md",
+      "ocr_pdf": "ocr/part-0401-0440.pdf",
+      "completed_at": "2026-08-02T06:48:19+00:00",
+      "error": null
+    },
+    {
+      "id": "part-0441-0460",
+      "start": 441,
+      "end": 460,
+      "status": "complete",
+      "chars": 15299,
+      "text": "text/batches/part-0441-0460.md",
+      "ocr_pdf": "ocr/part-0441-0460.pdf",
+      "completed_at": "2026-08-02T06:50:26+00:00",
+      "error": null
+    }
+  ],
+  "created_at": "2026-08-02T06:33:25+00:00",
+  "updated_at": "2026-08-02T06:50:26+00:00",
+  "page_offset": 16,
+  "book": {
+    "title": "スタートアップの法務A to Z 起業からIPOまで",
+    "editor": "AZX Professionals Group / AZX総合法律事務所",
+    "publisher": "中央経済社",
+    "edition": "第2版",
+    "read_purpose": "創業者としての法務リテラシー(VoC起業トラックの実務 + 知識として)",
+    "context": "analysis/context.md",
+    "page_offset_note": "印刷ページ = scanページ − 16 (scan 0016→p.1, 0020→p.5, 0250→p.235 で検証)",
+    "ocr_caveat": "地の文は約98%正確。番号付き列挙・枠囲み条項・濁点・近似漢字・図版由来のゴミは要画像確認。詳細は analysis/context.md"
+  }
+}
