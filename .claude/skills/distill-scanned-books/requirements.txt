@@ -1,0 +1,11 @@
+# distill-scanned-books の依存。
+#
+#   python3 -m pip install -r .claude/skills/distill-scanned-books/requirements.txt
+#   (Windows: py -3 -m pip install -r .claude\skills\distill-scanned-books\requirements.txt)
+#
+# 別途、システム側に Tesseract(+jpn, jpn_vert) と Ghostscript が要る。
+# 手順は references/windows-setup.md / references/macos-setup.md。
+
+ocrmypdf>=16      # Tesseract と Ghostscript を束ねてPDFにテキスト層を付ける
+pypdfium2>=4.30   # PDFのページ数取得・範囲切り出し・ページ画像化(Apache-2.0/BSD-3)
+Pillow>=10.0      # ページ画像の確認・縮小
