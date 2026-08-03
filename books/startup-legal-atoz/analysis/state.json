@@ -49,10 +49,10 @@
         },
         {
           "id": "part-0241-0280",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "analysis/l1/part-0241-0280.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-03T12:40:35+00:00"
         },
         {
           "id": "part-0281-0320",
@@ -278,17 +278,17 @@
         },
         {
           "id": "p0261-0270",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0261-0270.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-03T07:41:44+00:00"
         },
         {
           "id": "p0271-0280",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0271-0280.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-03T12:38:38+00:00"
         },
         {
           "id": "p0281-0290",
@@ -420,5 +420,5 @@
     }
   ],
   "created_at": "2026-08-02T06:58:28+00:00",
-  "updated_at": "2026-08-03T03:03:12+00:00"
+  "updated_at": "2026-08-03T12:40:35+00:00"
 }
