@@ -28,17 +28,17 @@
         },
         {
           "id": "part-0121-0160",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "analysis/l1/part-0121-0160.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-13T06:16:05+00:00"
         },
         {
           "id": "part-0161-0200",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "analysis/l1/part-0161-0200.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-13T06:18:32+00:00"
         },
         {
           "id": "part-0201-0240",
@@ -215,24 +215,24 @@
         },
         {
           "id": "p0171-0180",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0171-0180.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-12T06:21:18+00:00"
         },
         {
           "id": "p0181-0190",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0181-0190.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-12T06:23:56+00:00"
         },
         {
           "id": "p0191-0200",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0191-0200.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-12T08:40:00+00:00"
         },
         {
           "id": "p0201-0210",
@@ -376,17 +376,17 @@
         },
         {
           "id": "p0401-0410",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0401-0410.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-13T06:45:01+00:00"
         },
         {
           "id": "p0411-0420",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "text/corrected/p0411-0420.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-13T06:47:22+00:00"
         },
         {
           "id": "p0421-0430",
@@ -422,15 +422,15 @@
       "name": "l5_business_application",
       "units": [
         {
-          "id": "p0201-0400",
+          "id": "p0121-0400",
           "status": "complete",
           "output": "analysis/l5/irreversible-and-ask-experts.md",
-          "note": null,
-          "updated_at": "2026-08-06T08:35:31+00:00"
+          "note": "底本を5章分に拡張（第IV・V章を追加）。L1カード7枚＋第IV章前半の補正テキスト",
+          "updated_at": "2026-08-13T06:24:51+00:00"
         }
       ]
     }
   ],
   "created_at": "2026-08-02T06:58:28+00:00",
-  "updated_at": "2026-08-12T04:07:15+00:00"
+  "updated_at": "2026-08-13T06:47:22+00:00"
 }
