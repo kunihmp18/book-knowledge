@@ -7,10 +7,10 @@
       "units": [
         {
           "id": "part-0001-0040",
-          "status": "pending",
-          "output": null,
+          "status": "complete",
+          "output": "analysis/l1/part-0001-0040.md",
           "note": null,
-          "updated_at": null
+          "updated_at": "2026-08-14T04:28:44+00:00"
         },
         {
           "id": "part-0041-0080",
@@ -422,15 +422,15 @@
       "name": "l5_business_application",
       "units": [
         {
-          "id": "p0121-0400",
+          "id": "p0001-0460",
           "status": "complete",
           "output": "analysis/l5/irreversible-and-ask-experts.md",
-          "note": "底本を5章分に拡張（第IV・V章を追加）。L1カード7枚＋第IV章前半の補正テキスト",
+          "note": "全10章（印刷p.1-425）を底本に全面改訂。L1カード12枚に基づく",
           "updated_at": "2026-08-13T06:24:51+00:00"
         }
       ]
     }
   ],
   "created_at": "2026-08-02T06:58:28+00:00",
-  "updated_at": "2026-08-14T03:54:30+00:00"
+  "updated_at": "2026-08-14T04:28:44+00:00"
 }
