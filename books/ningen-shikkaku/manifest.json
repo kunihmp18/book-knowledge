@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "source": {
+    "path": "C:\\Users\\01061363\\Downloads\\ningen_shikkaku.txt",
+    "kind": "text",
+    "encoding": "shift_jis (cp932)",
+    "sha256": "786e6a1a4a031a846887f4d43923cb2cb4a984a858d888b87e76d994fe0450b0",
+    "bytes": 153317,
+    "lines": 889
+  },
+  "settings": {
+    "language": "jpn",
+    "ruby_stripped": true,
+    "annotation_stripped": true,
+    "chunking": "structural sections (heading breaks), not fixed line count"
+  },
+  "status": "complete",
+  "batches": [
+    {
+      "id": "l0016-0032",
+      "start": 16,
+      "end": 32,
+      "status": "complete",
+      "chars": 1900,
+      "text": "text/corrected/l0016-0032.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    },
+    {
+      "id": "l0033-0089",
+      "start": 33,
+      "end": 89,
+      "status": "complete",
+      "chars": 8999,
+      "text": "text/corrected/l0033-0089.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    },
+    {
+      "id": "l0090-0322",
+      "start": 90,
+      "end": 322,
+      "status": "complete",
+      "chars": 27523,
+      "text": "text/corrected/l0090-0322.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    },
+    {
+      "id": "l0323-0615",
+      "start": 323,
+      "end": 615,
+      "status": "complete",
+      "chars": 18115,
+      "text": "text/corrected/l0323-0615.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    },
+    {
+      "id": "l0616-0844",
+      "start": 616,
+      "end": 844,
+      "status": "complete",
+      "chars": 16001,
+      "text": "text/corrected/l0616-0844.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    },
+    {
+      "id": "l0845-0873",
+      "start": 845,
+      "end": 873,
+      "status": "complete",
+      "chars": 2086,
+      "text": "text/corrected/l0845-0873.md",
+      "ocr_pdf": null,
+      "completed_at": "2026-08-15T00:00:00+09:00",
+      "error": null
+    }
+  ],
+  "created_at": "2026-08-15T00:00:00+09:00",
+  "updated_at": "2026-08-15T00:00:00+09:00",
+  "page_offset": null,
+  "book": {
+    "title": "人間失格",
+    "author": "太宰治",
+    "publisher": "新潮社",
+    "edition": "新潮文庫 1985（昭和60）年1月30日100刷改版（底本）",
+    "first_published": "「展望」筑摩書房 1948年（昭和23年）6～8月号",
+    "read_purpose": null,
+    "context": "analysis/context.md",
+    "source_note": "青空文庫(https://www.aozora.gr.jp/)公開テキストを底本とする。印刷ページの概念が無いため、出典は原本行番号 [L0 line NNNN] で引く。",
+    "aozora_credit": "入力：細渕真弓／校正：八巻美惠／1999年1月1日公開／2011年1月9日修正"
+  }
+}
