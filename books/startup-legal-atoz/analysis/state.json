@@ -429,8 +429,39 @@
           "updated_at": "2026-08-13T06:24:51+00:00"
         }
       ]
+    },
+    {
+      "name": "l4_critique",
+      "units": [
+        {
+          "id": "book",
+          "status": "complete",
+          "output": "analysis/l4/limits-and-how-to-discount.md",
+          "note": "根拠の強さ6段階／割愛リスト／賞味期限表／VoCへの外挿限界",
+          "updated_at": "2026-08-15T05:31:21+00:00"
+        }
+      ]
+    },
+    {
+      "name": "l6_decisions",
+      "units": [
+        {
+          "id": "patchin",
+          "status": "complete",
+          "output": "analysis/l6/patchin-decisions.md",
+          "note": "L5§7の未解決論点を誰に・いつ・何を持って聞くかに変換",
+          "updated_at": "2026-08-15T05:31:22+00:00"
+        },
+        {
+          "id": "voc",
+          "status": "complete",
+          "output": "analysis/l6/voc-decisions.md",
+          "note": "職務発明の帰属が最優先／前提が崩れる7点を確認事項に変換",
+          "updated_at": "2026-08-15T05:31:22+00:00"
+        }
+      ]
     }
   ],
   "created_at": "2026-08-02T06:58:28+00:00",
-  "updated_at": "2026-08-14T04:28:44+00:00"
+  "updated_at": "2026-08-15T05:31:22+00:00"
 }
