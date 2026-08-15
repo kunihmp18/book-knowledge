@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "source_sha256": "786e6a1a4a031a846887f4d43923cb2cb4a984a858d888b87e76d994fe0450b0",
+  "stages": [
+    {
+      "name": "l0_corrected_text",
+      "units": [
+        {
+          "id": "l0016-0032",
+          "status": "complete",
+          "output": "text/corrected/l0016-0032.md",
+          "note": "はしがき",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        },
+        {
+          "id": "l0033-0089",
+          "status": "complete",
+          "output": "text/corrected/l0033-0089.md",
+          "note": "第一の手記",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        },
+        {
+          "id": "l0090-0322",
+          "status": "complete",
+          "output": "text/corrected/l0090-0322.md",
+          "note": "第二の手記",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        },
+        {
+          "id": "l0323-0615",
+          "status": "complete",
+          "output": "text/corrected/l0323-0615.md",
+          "note": "第三の手記 一",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        },
+        {
+          "id": "l0616-0844",
+          "status": "complete",
+          "output": "text/corrected/l0616-0844.md",
+          "note": "第三の手記 二",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        },
+        {
+          "id": "l0845-0873",
+          "status": "complete",
+          "output": "text/corrected/l0845-0873.md",
+          "note": "あとがき",
+          "updated_at": "2026-08-15T00:00:00+09:00"
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-08-15T00:00:00+09:00",
+  "updated_at": "2026-08-15T00:00:00+09:00"
+}

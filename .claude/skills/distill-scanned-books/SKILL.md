@@ -1,6 +1,6 @@
 ---
 name: distill-scanned-books
-description: Convert long scanned book PDFs into restartable, page-cited OCR text and progressively distill every page into faithful summaries, critiques, and business applications. Use when a user uploads or points to a scanned or image-only PDF and asks to OCR it, split it, resume interrupted processing, quality-check it, read the whole book, summarize or critique it, extract business ideas, or prepare private text for search/RAG—especially for long Japanese books that cannot be handled reliably in one context window.
+description: Convert long scanned book PDFs into restartable, page-cited OCR text and progressively distill every page into faithful summaries, critiques, and business applications. Use when a user uploads or points to a scanned or image-only PDF and asks to OCR it, split it, resume interrupted processing, quality-check it, read the whole book, summarize or critique it, extract business ideas, or prepare private text for search/RAG—especially for long Japanese books that cannot be handled reliably in one context window. Also covers books that are already machine-readable plain text (e.g. Aozora Bunko `.txt`), which skip OCR and enter directly at L0 — see "テキストが最初から機械可読なとき".
 ---
 
 # Distill Scanned Books
@@ -97,7 +97,83 @@ OCRは決定的なツールでローカルに回し、**カバレッジと品質
    言語・バッチ幅・force-ocr を変えるときは**新しい出力フォルダ**を使う
    （スクリプトが manifest と照合して、違えば止める）
 
+## テキストが最初から機械可読なとき(青空文庫など)
+
+入力が最初からプレーンテキストで配布されている場合(青空文庫の `.txt` など)は、
+OCR(`book_ocr.py`)を通さない。この節は上のOCR手順の**代わりに**使う入口で、
+「OCRを始める・再開する」と「解釈の前にOCRを検証する」の両方を飛ばして、
+ここから直接 **L0(`text/corrected/`)** を作り、そのまま
+「全ページの蒸留を実行する」に合流する。**OCRが要る入力にこの節を流用しない**
+(スキャン起源のPDF/画像は必ずOCR手順を通す)。
+
+1. 原本テキストファイルは**変更・上書き・移動・削除しない**(スキャン原本と同じ扱い)。
+   `books/<書籍ID>/` を決め、既存書籍とディレクトリ構成を揃える
+   (`manifest.json` / `analysis/` / `text/`)。
+
+2. 原本の文字コードを確認する。**UTF-8と決めつけない。** 青空文庫の配布テキストは
+   既定で **Shift_JIS(CP932)**。誤った文字コードで開くと文字化けしたまま
+   気づかずに進んでしまう。
+
+   ```powershell
+   # Windows: 冒頭を人間の目で確認する
+   $bytes = [System.IO.File]::ReadAllBytes("<path>")
+   [System.Text.Encoding]::GetEncoding(932).GetString($bytes).Substring(0,200)
+   ```
+
+3. 原本のsha256とバイト数・総行数を控える(`manifest.json`に書く)。
+
+4. 原本をUTF-8に変換しただけの**不変の生テキスト層**を
+   `text/raw/<書籍ID>.txt` に保存する。ルビ・入力者注記もそのまま残す。
+   ここがOCR書籍の `text/batches/*.md` に相当する不変の一次層で、
+   以降のどの層もここを書き換えない。
+
+5. 青空文庫特有の記法を除去し、`text/corrected/`(L0)に書く。
+   除去は解釈を挟まない機械的な正規表現処理にする:
+   - ルビ `｜文字列《よみ》` / `文字列《よみ》` → `｜` と `《…》` を削除し
+     `文字列` だけ残す(読みは捨てる。`｜`の有無に関わらず対象語の判定は不要 —
+     単に区切り記号と読み仮名を消すだけでよい)
+   - 入力者注 `［＃…］` → 丸ごと削除。ただし見出しの種別
+     (大見出し／中見出しなど)や字下げ指定はここでしか分からないことがあるので、
+     消す前に読み、構造情報として `analysis/context.md` と各L0ファイルの
+     frontmatter(`chapters:`)に書き残してから削除する
+   - ファイル冒頭の記法凡例、末尾の「底本」「入力」「校正」等のクレジット行は
+     本文ではないので L0 に含めない。`analysis/context.md` の書誌情報に転記する
+
+6. L0の分割単位は「ページ」ではなく、**原本にある構造上の区切り
+   (大見出し・中見出しなど)** で割る。区切りが無ければ、既存書籍の10ページ単位
+   と同程度の分量(本全体がおよそ10〜20ユニットに収まる行数)で機械的に割る。
+   ファイル名は `text/corrected/lNNNN-MMMM.md`(原本の開始行–終了行)。
+   出典は `[L0 line NNNN]` で引く(スキャン書籍の `[scan p.NNNN]` に相当)。
+   frontmatterは既存書籍のL0ファイルと同じ構造(`unit` / `source` / `chapters`等)
+   を使い、`scan_pages` の代わりに `source_lines` を持たせる。
+
+7. `manifest.json` は既存書籍と同じ形式で書く。存在しない概念は無理に埋めない:
+   - `source.kind`: `"text"`。`source.pages` は使わず `source.lines`(総行数)を使う
+   - 各 `batches[]` エントリは手順6のL0ユニットと1対1。`ocr_pdf` は `null`、
+     `start`/`end` は行番号
+   - `page_offset` / `page_offset_note`(印刷ページとの対応)は該当が無いので省略・null
+   - `book` 内のフィールドは書籍の性質に応じて増減してよい。小説なら `editor` の
+     代わりに `author`、事業文脈が無いなら `read_purpose` は `null` のままにする
+     (捏造しない。「止まる条件」の方針に従う)
+
+8. `analysis/state.json` は `l0_corrected_text` ステージ(手順6のユニットID)だけを
+   持たせて始める。**`l1_batch_cards` は今は登録しない** — 上位ステージは
+   「全ページの蒸留を実行する」に進むときに `add-stage` で登録する
+   (下の層から順に埋める、という既存の原則をそのまま守る)。
+
+9. QC: OCR特有の誤読チェックは無いが、**除去処理そのものの検証**をする。
+   `grep -c '《\|｜\|［＃' text/corrected/*.md` が全ファイルで0であること
+   (取りこぼした記法が本文に残っていないか)。`text/raw/` 側では同じ記法が
+   残っていること(不変層が本当に無加工か)も確認する。
+
+以降(L1バッチカード〜L5事業への適用)は「全ページの蒸留を実行する」節と
+`references/distillation-method.md` をそのまま使う。ページ参照は
+`[scan p.NNNN]` の代わりに `[L0 line NNNN]` を使う点だけが違う。
+
 ## 解釈の前にOCRを検証する
+
+**この節はOCR経由の入力(スキャンPDF・画像)だけに適用する。** 青空文庫などの
+テキスト直入力は上の節のQC(手順9)で完結し、この節は通らない。
 
 1. `manifest.json` が `complete` であること。`partial` のあいだは
    本全体についての主張を書かない
